@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge: Decodificador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <span><i class="fa fa-code" aria-hidden="true" style="font-size: 40px;"></i></span>
+        <a href="https://github.com/vitorpsousa/challenge-decodificador-de-texto"><i class="fa fa-github" aria-hidden="true" style="font-size: 60px;"></i></a>
+    </header>
+
+    <main class="conteudo">
+        <section class="entrada-de-texto">
+            
+            <div class="texto-entrada">
+                <textarea id="textoEncriptar" placeholder="Digite seu texto" cols="38" rows="21"></textarea>
+            </div>
+            </div>
+            <div class="aviso">
+                <i class="fa fa-exclamation-circle" aria-hidden="true" style="font-size: 20px;"></i><span> Apenas letras minúsculas e sem acento.</span>
+            </div>
+            <div class="btn">
+                <button class="criptografar">Criptografar</button>
+                <button class="descriptografar">Descriptografar</button>
+            </div>
+        </section>
+
+        <section id="saida-de-texto">
+            
+            <div id="antes">
+                <img src="assets/desenho-pessoa-lupa.svg" alt="desenho-pessoa-lupa">
+            <div class="info">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            </div>
+            
+
+            <div id="local-saida-de-texto">
+                <textarea id="textoEncriptado" cols="38" rows="21" readonly></textarea>
+                <button id="btn-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Vitor Sousa</p>
+    </footer>
+</body>
+<script type="text/javascript" src="app.js"></script>
+</html>
